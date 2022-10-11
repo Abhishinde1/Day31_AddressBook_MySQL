@@ -41,3 +41,6 @@ select * from Address_Book;
 delete from Address_Book where firstname='Sunny';
 select * from Address_Book;
 
+----UC6 Retrive person belonging to city and state---------
+
+select id, firstname,lastname,Address,city,state,zip,PhoneNumber,email from Address_Book where city = 'pune';
