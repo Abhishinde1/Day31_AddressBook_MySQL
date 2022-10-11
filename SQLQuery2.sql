@@ -17,3 +17,15 @@ zip int,
 PhoneNumber bigint,
 email varchar (250)
 );
+
+
+----UC3 Inserting new Contact------
+select * from  Address_Book
+insert into  Address_Book (firstname,lastname,Address,city,state,zip,PhoneNumber,email)
+values('Abhi','Shinde','Hadapsar','pune','Maharashtra',411028,8458458715,'abhis@gmail.com');
+
+insert into  Address_Book (firstname,lastname,Address,city,state,zip,PhoneNumber,email)
+values('yogi','kapre','Hadapsar','mumbai','Maharashtra',411029,8458458715,'yogisdd45@gmail.com');
+
+insert into  Address_Book (firstname,lastname,Address,city,state,zip,PhoneNumber,email)
+values('Abhi','Shinde','Hadapsar','pune','Maharashtra',411028,8458458715,'abhis@gmail.com');
