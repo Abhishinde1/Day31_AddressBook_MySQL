@@ -51,3 +51,7 @@ select COUNT(*) as citycount , city from Address_Book group by city;
 
 ------UC8 Retrive entries sorted alphabetically by person name------
 select * from Address_Book order by firstname;  
+
+-----UC9 To Identify Address with name and type--------
+Alter table Address_Book add Contacttype varchar(200)not null default  'friends';
+update Address_Book set contactType = 'Family' where firstname = 'yogi'
