@@ -25,10 +25,10 @@ insert into  Address_Book (firstname,lastname,Address,city,state,zip,PhoneNumber
 values('Abhi','Shinde','Hadapsar','pune','Maharashtra',411028,8458458715,'abhis@gmail.com');
 
 insert into  Address_Book (firstname,lastname,Address,city,state,zip,PhoneNumber,email)
-values('yogi','kapre','Hadapsar','mumbai','Maharashtra',411029,8458458715,'yogisdd45@gmail.com');
+values('yogi','kapre','Hadapsar','mumbai','chandigarh',411029,8458458715,'yogisdd45@gmail.com');
 
 insert into  Address_Book (firstname,lastname,Address,city,state,zip,PhoneNumber,email)
-values('Abhi','Shinde','Hadapsar','pune','Maharashtra',411028,8458458715,'abhis@gmail.com');
+values('Abhi','Shinde','Hadapsar','pune','Goa',411028,8458458715,'abhis@gmail.com');
 
 
 ---UC4 Edit Contact-----
@@ -44,3 +44,8 @@ select * from Address_Book;
 ----UC6 Retrive person belonging to city and state---------
 
 select id, firstname,lastname,Address,city,state,zip,PhoneNumber,email from Address_Book where city = 'pune';
+
+-------UC7 Understand size of Addressbook by city and state------
+select COUNT(*) as statecount , state from Address_Book group by state;
+select COUNT(*) as citycount , city from Address_Book group by city;
+
