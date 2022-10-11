@@ -29,3 +29,11 @@ values('yogi','kapre','Hadapsar','mumbai','Maharashtra',411029,8458458715,'yogis
 
 insert into  Address_Book (firstname,lastname,Address,city,state,zip,PhoneNumber,email)
 values('Abhi','Shinde','Hadapsar','pune','Maharashtra',411028,8458458715,'abhis@gmail.com');
+
+
+---UC4 Edit Contact-----
+
+Update Address_Book
+set firstname='sunny',lastname='bhandare' where id = 1;
+select * from Address_Book;
+
