@@ -37,3 +37,7 @@ Update Address_Book
 set firstname='sunny',lastname='bhandare' where id = 1;
 select * from Address_Book;
 
+-----UC5 Delete_Contact------
+delete from Address_Book where firstname='Sunny';
+select * from Address_Book;
+
